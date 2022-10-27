@@ -1,10 +1,10 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: $APP_FULCRUM_IP
-      APP_PORT: $APP_FULCRUM_PORT
+  #app_proxy:
+  #  environment:
+  #    APP_HOST: $APP_FULCRUM_IP
+  #    APP_PORT: $APP_FULCRUM_PORT
 
   fulcrum:
     image: oliverlj/fulcrum:v1.8.2@sha256:f88d80700a786fa6164e67bf7615e282932159b55eff25f40a8bcd2c5e51091b

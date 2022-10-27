@@ -2,7 +2,7 @@ manifestVersion: 1
 id: oliverlj-fulcrum
 category: Finance
 name: Fulcrum
-version: "1.8.2-build-0"
+version: "1.8.2-build-1"
 tagline: A fast & nimble SPV server for Bitcoin Cash, Bitcoin BTC, and Litecoin
 description: >
   Fast: Written in 100% modern C++17 using multi-threaded and asynchronous programming techniques.
