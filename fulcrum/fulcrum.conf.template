@@ -1,0 +1,22 @@
+# RPi optimizations
+# avoid 'bitcoind request timed out'
+bitcoind_timeout = 300
+# reduce load (4 cores only)
+bitcoind_clients = 1
+worker_threads = 1
+db_mem=1024
+
+# for 4GB RAM
+db_max_open_files=200
+fast-sync = 1024
+
+# for 8GB RAM
+#db_max_open_files=500
+#fast-sync = 2048
+
+# server connections
+# disable peer discovery and public server options
+peering = false
+announce = false
+
+max_buffer = 80000000

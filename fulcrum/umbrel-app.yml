@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: oliverlj-fulcrum
+category: Finance
+name: Fulcrum
+version: "1.8.2-build-0"
+tagline: A fast & nimble SPV server for Bitcoin Cash, Bitcoin BTC, and Litecoin
+description: >
+  Fast: Written in 100% modern C++17 using multi-threaded and asynchronous programming techniques.
+  A drop-in replacement for ElectronX/ElectrumX: Fulcrum is 100% protocol-level compatible with the 
+  Electrum Cash 1.4.5 protocol. Existing server admins should feel right at home with this software 
+  since installation and management of it is nearly identical to ElectronX/ElectrumX server.
+  Cross-platform: While this codebase was mainly developed and tested on MacOS, Windows and Linux,
+  it should theoretically work on any modern OS (such as *BSD) that has Qt5 Core and Qt5 Networking available.
+developer: Calin Culianu
+website: https://github.com/cculianu/Fulcrum
+dependencies:
+  - bitcoin
+repo: https://github.com/cculianu/Fulcrum
+support: https://github.com/cculianu/Fulcrum/issues
+port: 2106
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+path: ""
+defaultPassword: ""

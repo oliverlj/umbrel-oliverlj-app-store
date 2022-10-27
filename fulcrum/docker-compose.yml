@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: $APP_FULCRUM_IP
+      APP_PORT: $APP_FULCRUM_PORT
+
+  fulcrum:
+    image: oliverlj/fulcrum:v1.8.2@sha256:f88d80700a786fa6164e67bf7615e282932159b55eff25f40a8bcd2c5e51091b
+    command: "${APP_FULCRUM_COMMAND}"
+    restart: always
+    volumes:
+      - "${APP_BITCOIN_DATA_DIR}:/data/.bitcoin:ro"
+      - "${APP_DATA_DIR}/fulcrum.conf:/config/fulcrum.conf"
+      - "${APP_DATA_DIR}/data/fulcrum:/data"
+    ports:
+      - "${APP_FULCRUM_NODE_PORT}:${APP_FULCRUM_NODE_PORT}"
+      - "${APP_FULCRUM_WS_PORT}:${APP_FULCRUM_WS_PORT}"
+    networks:
+      default:
+        ipv4_address: $APP_FULCRUM_NODE_IP
