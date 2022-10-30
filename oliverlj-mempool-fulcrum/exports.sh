@@ -1,5 +1,5 @@
 export APP_MEMPOOL_FULCRUM_HOST="oliverlj-mempool-fulcrum_web_1"
-export APP_MEMPOOL_FULCRUM_PORT="4001"
+export APP_MEMPOOL_FULCRUM_PORT="4006"
 export APP_MEMPOOL_FULCRUM_API_HOST="oliverlj-mempool-fulcrum_api_1"
 export APP_MEMPOOL_FULCRUM_DB_HOST="oliverlj-mempool-fulcrum_mariadb_1"
 

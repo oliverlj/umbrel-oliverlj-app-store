@@ -2,7 +2,7 @@ manifestVersion: 1
 id: oliverlj-mempool-fulcrum
 category: Explorers
 name: mempool for fulcrum
-version: "2.4.0-build-1"
+version: "2.4.0-build-2"
 tagline: A self-hosted explorer for the Bitcoin community
 icon: https://getumbrel.github.io/umbrel-apps-gallery/mempool/icon.svg
 description: >-
